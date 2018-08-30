@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test  name="Test1"  preserve-order="true">  
+  		<parameter name="udid" value="1d9a50687cf4"/>
+		<parameter name="appPackage" value="com.app.pepperfry"/>
+		<parameter name="appActivity" value=".home.main.ui.SplashScreenActivity"/>
+		<parameter name="platformName" value="Android"/>
+		<parameter name="URL" value="http://127.0.0.1:4723/wd/hub"/>  
+		
+		<classes>
+	      <class name="com.test.pepperfry.Login"/>	          
+	    </classes>
+  </test> <!-- Test -->
+   <test  name="Test2"  preserve-order="true">  
+  		<parameter name="udid" value="2f12d624"/>
+		<parameter name="appPackage" value="com.app.pepperfry"/>
+		<parameter name="appActivity" value=".home.main.ui.SplashScreenActivity"/>
+		<parameter name="platformName" value="Android"/>
+		<parameter name="URL" value="http://127.0.0.1:4733/wd/hub"/>  
+		
+		<classes>
+	      <class name="com.test.pepperfry.Registeration"/>	          
+	    </classes>
+  </test> <!-- Test -->
+ 
+</suite> <!-- Suite -->
+
+
+<!-- 
+<suite name="Suite" parallel="tests">
+  <test  name="Test1"  preserve-order="true">  
+  		<parameter name="deviceName" value="1d9a50687cf4"/>
+		<parameter name="appPackage" value="com.app.pepperfry"/>
+		<parameter name="appActivity" value=".home.main.ui.SplashScreenActivity"/>
+		<parameter name="platformName" value="Android"/>
+		<parameter name="URL" value="http://127.0.0.1:4733/wd/hub"/>  
+		
+		<classes>
+	      <class name="com.test.pepperfry.Login"/>
+	      <class name="com.test.pepperfry.Registeration"/>	
+	      <class name="com.test.pepperfry.AddCartFunctionality"/>	
+	      <class name="com.test.pepperfry.WishListFunctionality"/>	
+	      <class name="com.test.pepperfry.ControlSeekBar"/>		          
+	    </classes>
+  </test> 
+  </suite>
+   -->

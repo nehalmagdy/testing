@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test  name="Test1"  preserve-order="true">  
+  		<parameter name="udid" value="2f12d624"/>
+		<parameter name="appPackage" value="com.app.pepperfry"/>
+		<parameter name="appActivity" value=".home.main.ui.SplashScreenActivity"/>
+		<parameter name="platformName" value="Android"/>
+		<parameter name="URL" value="http://localhost:4723/wd/hub"/>  
+		<groups>
+	      <run>
+	        <include name="Regression"/>
+	      </run>
+	    </groups>
+		<classes>
+	      <class name="com.test.junit.TestLoginGroups"/>	          
+	    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
